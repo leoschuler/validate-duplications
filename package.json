@@ -1,0 +1,31 @@
+{
+  "name": "validate-duplications",
+  "version": "1.0.0",
+  "description": "serverless function to prevent duplications on form submission",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=12.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leoschuler/validate-duplications.git"
+  },
+  "keywords": [
+    "mautic",
+    "netlify"
+  ],
+  "author": "leoschuler@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leoschuler/validate-duplications/issues"
+  },
+  "homepage": "https://github.com/leoschuler/validate-duplications#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.1",
+    "querystring": "^0.2.1"
+  }
+}
