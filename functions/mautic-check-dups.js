@@ -71,12 +71,14 @@ export async function handler(event, context)  {
         }
 
         if( foundDuplicate <= 1 ) {
-            console.log("No Duplication");
+            console.log("No Duplication Detected");
             return { statusCode: 200, body: "No Duplication" };
         }
             
 
-        let errorMessage = "Uma Inscrição já foi realizada com a informação fornecida";
+        let errorMessage = process.env.DUPLICATE_ERROR_MESSAGE || "Uma Inscrição já foi realizada com a informação fornecida";
+
+        /*
         if( fields.length == 1 ) {
             errorMessage = `${errorMessage} (${fields[0]})`;
         } else {
@@ -90,6 +92,8 @@ export async function handler(event, context)  {
         }
 
         console.log(errorMessage);
+        */
+        console.log("Duplication Detected!")
         return { statusCode: 500, body: errorMessage };
 
             

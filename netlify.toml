@@ -1,4 +1,5 @@
 [build]
     function = "./functions"
+    publish = "./site"
 [functions]
     node_bundler = "esbuild"
